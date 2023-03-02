@@ -84,3 +84,18 @@ ORDER BY birthYear ASC, height DESC;
 -- 중복제거/ 중복제거할 컬럼만 
 select distinct addr
 	from usertbl;
+    
+    -- limit 갯수제한alter
+    USE homeplus;
+    
+    select * from indexTbl
+    limit 5;
+    
+-- 조회하면서 새로운 테이블 생성
+create table elec_buytbl_new
+select num
+	, prodname
+	,pricebirthYearbirthYearbirthYearbirthYearbirthYearbirthYear
+ from buytbl
+where groupName = '전자';
+    
